@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuarios</title>
+</head>
+
+<body>
+
+    <form action="./adm/cad_cliente.php" method="POST">
+
+        <table width="75%" border="0" align="center" cellpading="1" cellspacing="3">
+            <tr>
+                <td colspan="2"><div align="center">Cadastro de Usuarios</div></td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">Nome:</td>
+                <td width="50%"><Input type="text" id="Nome" name="Nome" required></Input></td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">Cidade:</td>
+                <td width="50%"><Input type="text" id="Cidade" name="Cidade" required></Input></td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">Estado:</td>
+                <td width="50%">
+                    <select name="Estado" id="Estado">
+                        <option value="SC">SC</option>
+                        <option value="PR">PR</option>
+                        <option value="RS">RS</option>
+                        <option value="SP">SP</option>
+                        <option value="MG">MG</option>
+                        <option value="ES">ES</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">Email:</td>
+                <td width="50%"><Input type="text" id="Email" name="Email" required></Input></td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">login:</td>
+                <td width="50%"><Input type="text" id="Login" name="Login" required></Input></td>
+            </tr>
+            <tr>
+                <td width="50%" align="right">Senha:</td>
+                <td width="50%"><Input type="password" id="Senha" name="Senha" required></Input></td>
+            </tr>
+            <tr>
+                <td align="right">&nbsp;</td>
+                <td width=50%>
+                    <input type="submit" name="Salvar" id="Salvar" value="Salvar">
+                    <input type="reset" name="Limpar" id="Limpar" value="Limpar">
+            </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+
+</html>

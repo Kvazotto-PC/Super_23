@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login.css">
+
+    <script type="text/javascript">
+        function setFocus() {
+            document.getElementById("LoginUsuario").focus();
+            
+        }
+    </script>
+</head>
+<body onload="setFocus()" bgcolor="#d3d3d3">
+
+    <form name="form1" method="post" action="login.php" class="form" >
+        <table width="50%"
+        border="0"
+        align="center"
+        cellpadding="1"
+        cellspacing="0">
+            <tr>
+                <th colspan="2"> <div align="center"><h2>Faça Login para Prosseguir</h2></div></th>
+            </tr>
+            <tr>
+                <td width="33%" align="center"> </td>
+                <td widht="60%">
+                    <input type="text" class="input-container" id="LoginUsuario"
+                    name="LoginUsuario" 
+                    placeholder="Usuário">
+                </td>
+            </tr>
+
+            <tr>
+                <td width="33%" align="center"> </td>
+                <td widht="60%">
+                    <input type="password" class="input-container" id="SenhaUsuario"
+                    name="SenhaUsuario" 
+                    placeholder="senha">
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;  </td> <!-- Espaço em branco-->
+                <td> <button type="submit" id="Enviar" class="envio"
+                    name="Enviar"> Enviar</button> </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+
+   
+
+
+    
+</body>
+</html>
